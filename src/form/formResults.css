@@ -1,0 +1,59 @@
+.newEvents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.newEvents a {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .newEvents {
+    justify-content: space-between;
+  }
+  .newEvents a {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .newEvents a {
+    width: 31.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .newEvents a {
+    width: 23%;
+  }
+}
+
+.eventLink {
+  position: relative;
+}
+
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #263238;
+  color: #ff9333;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.eventLink:hover .eventInfo {
+  opacity: 1;
+  visibility: visible;
+}

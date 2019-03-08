@@ -1,11 +1,16 @@
 import React from "react";
 import { Header } from "./header/header";
-import { Form } from "./form/form";
+import { Form } from "./form/Form";
+import Footer from "./Fotter/footer";
+import { FormResults } from "./form/formResults";
+
 
 const Home = () => (
   <div className="container">
-    <Header />
-    <Form />
+   <Header/>
+   <Form/>
+   <FormResults/>
+   <Footer/>
   </div>
 );
 
